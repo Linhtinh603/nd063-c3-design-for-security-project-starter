@@ -1,3 +1,7 @@
 # Describe GuardDuty findings that were detected related to the brute force attack
+- The Attack Instance was being used for brute force attacks as an ACTOR target resource.
+- The Web Service Instances was received the burte force attacks against as TARGET resource from an IP 44.200.127.94
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+AWS GuardDuty may have detected brute force attacks is by analyzing authentication logs. Brute force attacks typically involve repeated attempts to log in to a system using different combinations of usernames and passwords.
+GuardDuty can also use threat intelligence feeds to identify known malicious IP addresses or domains that are associated with brute force attacks. When it detects traffic from these sources.

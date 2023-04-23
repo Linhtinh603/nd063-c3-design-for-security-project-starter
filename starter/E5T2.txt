@@ -1,13 +1,27 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+- AWS CloudFormation Linter: : AWS CloudFormation Linter is an open-source tool that checks AWS CloudFormation templates for security and compliance issues
+- Checkov: Checkov is an open-source tool that scans Terraform, CloudFormation, and Kubernetes YAML files for security and compliance issues
+- Terraform Validator: Terraform Validator is an open-source tool that checks Terraform configurations against common security best practices
 
 ### Example vulnerability
+- scan templates for issues such as hard-coded secrets, missing security groups
+- scan templates for issues such as missing encryption, unrestricted security groups
 
 ##Scan AMI’s or containers for OS vulnerabilities
+- Amazon Inspector: Amazon Inspector is an AWS service that helps you to analyze the behavior of your applications and identify potential security issues
+- Anchore: Anchore is an open-source tool for scanning container images for vulnerabilities and misconfigurations
+- Clair: Clair is an open-source vulnerability scanner for container images
+
 
 ### Example vulnerability
+- scan your EC2 instances or containers for common security issues and vulnerabilities
+
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config: AWS Config is a fully managed service that provides a detailed inventory of your AWS resources and their current configurations
+- Security Hub: AWS Security Hub is a security service that provides a comprehensive view of your security posture across your AWS accounts
 
 ### Example vulnerability
+- Check if your security group rules are configured correctly, if your S3 buckets are not publicly accessible, if your IAM policies have the correct permissions

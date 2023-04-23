@@ -1,5 +1,7 @@
-
-
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- Disable SSH password login, use key pair instead
+- Move the Web Service instance to private subnet
+- Update inboud configuration for WebAppSG security group that only allow SSH port 22 from trusted EC2 or trusted IP range.
+- Use AWS Systems Manager Session Manager to connect to Web Service instance
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.

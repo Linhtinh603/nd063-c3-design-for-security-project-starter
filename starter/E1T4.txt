@@ -1,5 +1,11 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Poor practice 1
+* The Web Service Instance was deployed in a public subnet.
+	This a the instance running a application inside, with deploying in a public subnet, it dose not secure when everyone can access this instance via internet.
 
 # Poor practice 2
+* VPC has been set-up incorrectly
+  - Private subnets has attached an Internet Gateway to Private Route Table. Thus, it broke the benefits of private subnets, everyone can access all resources in there via internet.
+  - Security group configuration of WebAppSG: All traffic allowed
+	+ Inboud rules has configured All traffic: With the requirements, the Web App SG shoud allow inboud rules from AppLoadBalancerSG with port 80 HTTP, 443 HTTPS and 22 SSH from trusted IP range.
