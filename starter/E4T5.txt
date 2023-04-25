@@ -1,0 +1,5 @@
+Additional hardening suggestions from Exercise 4, Task 5.
+
+- InstanceRole: only read access for BucketNameRecipesFree
+- WebAppSG: only allow inbound from port 5000 of AppLoadBalancerSG
+- S3BucketRecipesSecret: ServerSideEncryptionByDefault
